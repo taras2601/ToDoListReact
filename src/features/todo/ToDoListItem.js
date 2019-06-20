@@ -4,7 +4,7 @@ export default class ToDoListItem extends Component {
 
     handlerClickTodo = () => {
         this.props.toggleTodoCompleteStatus(this.props.id)
-    }
+    };
 
     render() {
         return (

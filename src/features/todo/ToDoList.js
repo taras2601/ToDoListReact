@@ -5,11 +5,11 @@ export default class ToDoList extends Component {
 
     handlerChangeInput = (event) => {
         this.props.setInputValue(event.target.value);
-    }
+    };
 
     handlerClickButtonAdd = () => {
         this.props.addTodo();
-    }
+    };
 
     render() {
         return (

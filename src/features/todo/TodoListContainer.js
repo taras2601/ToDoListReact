@@ -5,11 +5,11 @@ export default class TodoListContainer extends Component {
     state = {
         inputValues: '',
         todos: [],
-    }
+    };
 
     setInputValue = (newValue) => {
         this.setState({inputValues: newValue});
-    }
+    };
 
     addTodo = () => {
         const newItem = {
@@ -22,14 +22,14 @@ export default class TodoListContainer extends Component {
             todos: todos,
             inputValue: ''
           });
-    }
+    };
 
     toggleTodoCompleteStatus = (todoId) => {
         const newTodos = this.state.todos.map(todo => 
             todo.id === todoId ? { ...todo, isComplete: !todo.isComplete } : todo
         );
         this.setState({todos: newTodos});
-    }
+    };
 
     render() {
         console.log(this);
